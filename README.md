@@ -10,7 +10,7 @@
 <h4 align="center">A very simple Ordering Doughnuts System</h4>
 
 <p align="center">
-  <img width="460" height="300" src="img/demo.png">
+  <img src="img/demo.png">
 </p>
 
 
