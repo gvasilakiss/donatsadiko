@@ -1,0 +1,46 @@
+.error {
+    color: tomato;
+}
+
+.swal-overlay {
+    background-color: rgba(199, 32, 32, 0.45);
+}
+
+.swal-footer {
+    background-color: rgb(245, 248, 250);
+    margin-top: 32px;
+    border-top: 1px solid #E9EEF1;
+    overflow: hidden;
+}
+
+.form-control {
+    width: auto !important;
+    margin: 0px auto !important;
+    display: block !important;
+}
+
+a:not([href]):not([tabindex]) {
+    color: white !important;
+    text-decoration: none;
+}
+
+.text-primary {
+    color: white !important
+}
+
+a.text-primary:focus,
+a.text-primary:hover {
+    color: white !important
+}
+
+.btn-space {
+    margin-left: 15px !important;
+}
+
+.table-responsive {
+    display: table;
+}
+
+.btn-outline-primary {
+    color: white !important;
+}
