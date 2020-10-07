@@ -2,8 +2,8 @@
 <?php require "dbconnect.php"?>
 <?php
         try {
-            //has the user not submitted the form
-            if(!$_SERVER['REQUEST_METHOD'] == 'POST') 
+            // User has not submitted the form
+            if($_SERVER['REQUEST_METHOD'] != 'POST') 
             {
                 return;
             }
