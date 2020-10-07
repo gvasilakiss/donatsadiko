@@ -69,10 +69,9 @@ $total_price = number_format($total_price, 2);
 
 if($total == 12){
 
-$sql = "INSERT INTO donut (Order_Name, sprinkles, chocolate, caramel, raspberry, strawberry, blueberry, Total_Price, Order_Date, User_ID) VALUES ('$order_name', '$sprinkles', '$chocolate', '$caramel', '$raspberry', '$strawberry', '$blueberry', '$total_price', '$Date', '$user_id')";
-
-// use exec() because no results are returned
-$conn->exec($sql);
+$sql = "INSERT INTO donut (Order_Name, sprinkles, chocolate, caramel, raspberry, strawberry, blueberry, Total_Price, Order_Date, User_ID) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+$sth = $conn->prepare($sql);
+$sth->execute([$order_name ,$sprinkles ,$chocolate ,$caramel ,$raspberry ,$strawberry ,$blueberry ,$total_price ,$Date ,$user_id]);
 $last_id = $conn->lastInsertId();
 
 echo '
